@@ -63,31 +63,19 @@ body {
     left: 2.5px;
 }
 
-/* ======================================= */
-/* ====== 1. Default (Desktop First) ====== */
-/* ======================================= */
 
-/*
-   मौजूदा कोड डेस्कटॉप के लिए अच्छा है,
-   इसलिए हम इसे 'default' स्टाइल मानकर शुरू करते हैं।
-*/
-
-.snake-segment {
-    /* ... (Your existing styles) ... */
-    /* मान लीजिए डेस्कटॉप पर सेगमेंट साइज़ 20px है */
     width: 20px;
     height: 20px;
 }
 
 .head {
-    /* ... (Your existing styles) ... */
-    /* मान लीजिए डेस्कटॉप पर हेड साइज़ 60x40px है */
+    
     width: 60px;
     height: 40px;
 }
 
 .title {
-    /* ... (Your existing styles) ... */
+   
     font-size: 36px;
 }
 
@@ -97,7 +85,35 @@ body {
 }
 
 
+
 @media screen and (max-width: 768px) {
+    
+    /* ... (अन्य Snake/Head/Eye स्टाइल यहाँ अपरिवर्तित रहेंगे) ... */
+
+    .title {
+        /* टाइटल का फ़ॉन्ट साइज़ छोटा कर दिया गया */
+        font-size: 28px;
+        top: 20px;
+        
+        /* आपकी मांग के अनुसार - हल्का फ़ॉन्ट कलर */
+        color: #e6e6e6; 
+        /* टेक्स्ट शैडो */
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    }
+    
+    .instructions {
+        /* निर्देश का फ़ॉन्ट साइज़ छोटा कर दिया गया */
+        font-size: 14px;
+        bottom: 10px;
+        padding: 0 10px; 
+        
+        /* आपकी मांग के अनुसार - हल्का फ़ॉन्ट कलर */
+        color: #f0f0f0;
+        /* टेक्स्ट शैडो */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
+    }
+
+
     
     .snake-segment {
         
@@ -175,5 +191,6 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     z-index: 20;
 }
+
 
 
